@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.StaticFiles;
+
 namespace CityInfo.API
 {
     public class Program
@@ -12,6 +14,8 @@ namespace CityInfo.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            //added
+            builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
             var app = builder.Build();
 
@@ -21,13 +25,21 @@ namespace CityInfo.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            
             app.UseHttpsRedirection();
+
+            // added
+            app.UseRouting();
 
             app.UseAuthorization();
 
+            // changed
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
 
-            app.MapControllers();
+
 
             app.Run();
         }
