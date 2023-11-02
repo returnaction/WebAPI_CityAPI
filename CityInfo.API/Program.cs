@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.StaticFiles;
+using NLog.Fluent;
 
 namespace CityInfo.API
 {
@@ -6,6 +7,8 @@ namespace CityInfo.API
     {
         public static void Main(string[] args)
         {
+            
+            
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -45,3 +48,5 @@ namespace CityInfo.API
         }
     }
 }
+
+// stopped at chapter 5 video 3 did not install the same logger as in the video;

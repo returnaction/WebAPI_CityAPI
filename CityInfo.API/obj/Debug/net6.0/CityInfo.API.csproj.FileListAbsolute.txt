@@ -34,3 +34,4 @@ C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\b
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\NLog.dll
