@@ -30,3 +30,7 @@ C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\o
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\obj\Debug\net6.0\CityInfo.API.pdb
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\obj\Debug\net6.0\CityInfo.API.genruntimeconfig.cache
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\obj\Debug\net6.0\ref\CityInfo.API.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
