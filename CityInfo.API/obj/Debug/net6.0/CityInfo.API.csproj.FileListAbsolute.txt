@@ -90,3 +90,5 @@ C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\b
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Oberg\OneDrive\Desktop\PortFolio\WebApI\Cources\CityInfo\CityInfo.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

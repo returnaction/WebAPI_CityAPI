@@ -1,4 +1,5 @@
 using CityInfo.API.DbContexts;
+using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using NLog.Fluent;
@@ -23,6 +24,9 @@ namespace CityInfo.API
             builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
             builder.Services.AddDbContext<CityInfoContext>(option =>
              option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             var app = builder.Build();
 

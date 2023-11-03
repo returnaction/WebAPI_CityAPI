@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E75tJ7NXBHlaJdTX7nkGv6TUSTACUQiwhnsK2RTKrF5NzG4j2TzEA5Na33JUJ15+grB9pPWXUQqPP4FrjT35EA==",
+  "dgSpecHash": "rXskpHxWmo3qhVkrXwTebihEEOdeg+DnCu+ZcX6J5ylFq5aJPvY2i7Zxs0r7egCoGqDtc1s29dwVZiRw4CiZ3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Oberg\\OneDrive\\Desktop\\PortFolio\\WebApI\\Cources\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Oberg\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Oberg\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Oberg\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Oberg\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Oberg\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
