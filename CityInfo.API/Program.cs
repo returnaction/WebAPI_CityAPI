@@ -1,4 +1,6 @@
+using CityInfo.API.DbContexts;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using NLog.Fluent;
 
 namespace CityInfo.API
@@ -19,6 +21,8 @@ namespace CityInfo.API
             builder.Services.AddSwaggerGen();
             //added
             builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
+            builder.Services.AddDbContext<CityInfoContext>(option =>
+             option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
