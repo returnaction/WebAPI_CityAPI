@@ -73,5 +73,23 @@ namespace CityInfo.API.Services
             _context.PointsOfInterest.Remove(pointOfInterest);
 
         }
+
+        //Forcity
+        public async Task AddCityAsync(City city)
+        {
+            if(city != null)
+            {
+                await _context.Cities.AddAsync(city);
+            }
+               
+        }
+
+        public void DeleteCityAsync(City city)
+        {
+            if (city != null)
+                _context.Cities.Remove(city);
+        }
+
+
     }
 }

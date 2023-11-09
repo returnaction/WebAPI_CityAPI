@@ -57,4 +57,4 @@ namespace CityInfo.API
     }
 }
 
-// stopped at chapter 7 video 7
+// stopped at chapter 8 but before that whanted to make a post request for city

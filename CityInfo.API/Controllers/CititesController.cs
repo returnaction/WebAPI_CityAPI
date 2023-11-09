@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CityInfo.API.Entities;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.Http;
@@ -46,6 +47,52 @@ namespace CityInfo.API.Controllers
 
             return Ok(_mapper.Map<CityWithoutPointsOfInterestDto>(cityEntity));
             
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> AddCity(CityForCreatingDto newCity)
+        {
+            try
+            {
+                if (newCity is null)
+                    return BadRequest();
+
+                var city = _mapper.Map<City>(newCity);
+
+                await _cityInfoRepository.AddCityAsync(city);
+                await _cityInfoRepository.SaveChangesAsync();
+
+                return StatusCode(201);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpDelete("{cityid}")]
+        public async Task<ActionResult> DeleteCity(int cityId)
+        {
+            try
+            {
+                if(!await _cityInfoRepository.CityExistsAsync(cityId))
+                    return NotFound();
+
+
+                var city = await _cityInfoRepository.GetCityAsync(cityId, false);
+
+                _cityInfoRepository.DeleteCityAsync(city);
+
+                await _cityInfoRepository.SaveChangesAsync();
+
+                return StatusCode(201);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+                throw;
+            }
         }
     }
 }
