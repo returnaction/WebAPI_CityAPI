@@ -31,16 +31,21 @@ namespace CityInfo.API.Controllers
 
         }
 
-        //[HttpGet("{id}")]
-        //public ActionResult<CityDto> GetCity(int id)
-        //{
-        //    var cityToReturn = CitiesDataStore.Current.Cities
-        //        .FirstOrDefault(c => c.Id == id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<CityDto>> GetCity(int id, bool includePointsOfInterest = false)
+        {
+            var cityEntity = await _cityInfoRepository.GetCityAsync(id, includePointsOfInterest);
 
-        //    if (cityToReturn == null)
-        //        return NotFound();
+            if (cityEntity is null)
+                return NotFound();
 
-        //    return Ok(cityToReturn);
-        //}
+            if (includePointsOfInterest)
+            {
+                return Ok(_mapper.Map<CityDto>(cityEntity));
+            }
+
+            return Ok(_mapper.Map<CityWithoutPointsOfInterestDto>(cityEntity));
+            
+        }
     }
 }

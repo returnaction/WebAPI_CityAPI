@@ -50,11 +50,11 @@ namespace CityInfo.API
                 endpoints.MapControllers();
             });
 
-
+            
 
             app.Run();
         }
     }
 }
 
-// stopped at chapter 5 video 3 did not install the same logger as in the video;
+// stopped at chapter 7 video 7
