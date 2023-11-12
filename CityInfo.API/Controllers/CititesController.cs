@@ -39,7 +39,7 @@ namespace CityInfo.API.Controllers
 
             if (cityEntity is null)
                 return NotFound();
-
+            
             if (includePointsOfInterest)
             {
                 return Ok(_mapper.Map<CityDto>(cityEntity));
